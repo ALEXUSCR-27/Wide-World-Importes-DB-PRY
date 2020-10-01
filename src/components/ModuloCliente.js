@@ -67,7 +67,7 @@ class ModuloCliente extends Component{
 				</Container>
 				
 			</div>
-		)
+		);
 	}
 }
 export default ModuloCliente;

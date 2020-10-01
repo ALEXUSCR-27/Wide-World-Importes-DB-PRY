@@ -65,7 +65,7 @@ class ModuloProveedor extends Component{
 					</div>
 				</Container>
 			</div>
-		)
+		);
 	}
 }
 export default ModuloProveedor;

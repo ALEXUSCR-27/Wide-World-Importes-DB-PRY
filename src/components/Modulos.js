@@ -71,7 +71,7 @@ class Modulos extends Component {
 						</p>
 					</div>
 			</div>
-		)
+		);
 	}
 }
 
