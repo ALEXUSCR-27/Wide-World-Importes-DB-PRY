@@ -16,7 +16,7 @@ class App extends Component {
         <Route exact path="/moduloCliente" component={ModuloCliente}/>
         <Route exact path="/moduloProveedor" component={ModuloProveedor}/>
       </BrowserRouter>
-    );
+    )
   }
 }
 
