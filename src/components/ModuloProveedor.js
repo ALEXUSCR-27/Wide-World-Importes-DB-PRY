@@ -1,42 +1,31 @@
 import React, {Component} from 'react';
 import {Container} from 'react-bootstrap';
 import Clientes from '../img/Clientes_2.png';
+import Navbar from './Navbar.js';
 
 /* revisar width margin-right height border-radius float */
 class ModuloProveedor extends Component{
 	render () {
 		return (
 			<div>
-			<nav className="navbar navbar-expand-xl navbar-dark bg-dark">
-			  <a className="navbar-brand" href="#">Wide World Importerts</a>
-			  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-			    <span className="navbar-toggler-icon"></span>
-			  </button>
-			  <div className="collapse navbar-collapse" id="navbarColor02">
-			    <ul className="navbar-nav mr-auto">
-			      <li className="nav-item active">
-			        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-			      </li>
-			    </ul>
-			  </div>
-			</nav>
+				<Navbar/>
 				<div className="jumbotron">
 					<h1 className="display-4"><img className="img-fluid" src= {Clientes}/>&nbsp;Módulo de Consulta de Proveedores</h1>
 				</div>
 				<Container className="container width=100 justify-content-center">
 					<div className="row">
 						<div className="form-group col-md-4 offset-1">
-							<label htmlFor="NombreCliente">Nombre del Cliente</label>
+							<label htmlFor="NombreCliente">Nombre del Proveedor</label>
 							<input type="text" className="form-control form-control-lg" id="NombreCliente"/>
 						</div>
 						<div className="form-group col-md-4 offset-2">
 							<label htmlFor="categoria">Categoría</label>
 				      <select className="form-control" id="categoria">
 				      	<option></option>
-				        <option>Agent</option>
-				        <option>Computer Store</option>
-				        <option>Corporate</option>
-				        <option>General Retailer</option>
+				        <option>Clothing Supplier</option>
+				        <option>Courier Services Supplier</option>
+				        <option>Financial Services Supplier</option>
+				        <option>Insurance Services Supplier</option>
 				        <option>Gift Store</option>
 				        <option>Novelty Shop</option>
 				        <option>Supermarket</option>

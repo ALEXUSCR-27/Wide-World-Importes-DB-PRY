@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Container} from 'react-bootstrap';
+import Navbar from './Navbar.js';
 import Clientes from '../img/Clientes_2.png';
 
 /* revisar width margin-right height border-radius float */
@@ -7,22 +8,9 @@ class ModuloCliente extends Component{
 	render () {
 		return (
 			<div>
-				<nav className="navbar navbar-expand-xl navbar-dark bg-dark">
-				  <a className="navbar-brand" href="#">Wide World Importerts</a>
-				  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-				    <span className="navbar-toggler-icon"></span>
-				  </button>
-				  <div className="collapse navbar-collapse" id="navbarColor02">
-				    <ul className="navbar-nav mr-auto">
-				      <li className="nav-item active">
-				        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-				      </li>
-				    </ul>
-				  </div>
-				</nav>
-
+				<Navbar/>
 				<div className="jumbotron">
-					<h1 className="display-4"><img className="img-fluid" src= {Clientes}/>&nbsp;Módulo de Consulta de Clientes</h1>
+					<h1 className="display-4 offset-1"><img className="img-fluid" src= {Clientes}/>&nbsp;Módulo de Consulta de Clientes</h1>
 				</div>
 
 				<Container className="container width=100 justify-content-center">
